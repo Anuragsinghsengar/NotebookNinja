@@ -8,6 +8,8 @@ import Alert from "./components/Alert";
 import Login from "./components/Login";
 import SignUp from "./components/SignUp";
 import { useState } from "react";
+var cors = require('cors');
+
 
 function App() {
   const [ alert,setAlert ] = useState(null);
