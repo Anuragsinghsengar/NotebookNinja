@@ -60,7 +60,7 @@ const handleLogout = () => {
               <Link className="btn btn-primary mx-1" to="/signup" type="submit">
                 SignUp
               </Link>
-            </form>:<button className="btn btn-primary" onClick={handleLogout}>Logout</button>}
+            </form>:<button className="btn btn-primary mx-1" onClick={handleLogout}>Logout</button>}
           </div>
         </div>
       </nav>
