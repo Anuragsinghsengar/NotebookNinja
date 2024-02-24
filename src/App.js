@@ -22,7 +22,7 @@ function App() {
   }
   return (
     <>
-    <div className="box" style={{minWidth:'100vw',minHeight:'100vh',backgroundColor:'#603A28'}}>
+    <div className="box" style={{backgroundColor:'#603A28',width:'100vw',backgroundColor:'#603A28',minHeight:'100vh'}}>
 <NoteState>
       <Router>
         <Navbar />

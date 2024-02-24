@@ -32,7 +32,7 @@ function Login(props) {
   };
   return (
     <>
-      <div className="container my-3" style={{color:'white'}}>
+      <div className="container my-3" style={{color:'white',backgroundColor:''}}>
       <h3 className="my-3">Login with your account to access your notes</h3>
         <form onSubmit={handleSubmit}>
           <div className="mb-3">
