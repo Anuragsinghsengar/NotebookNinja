@@ -18,12 +18,12 @@ function AddNote(props) {
   };
   return (
     <>
-      <div className="container my-3">
+      <div className="container my-3" style={{color:'white'}}> 
         <h2>Add a Note</h2>
         <form>
           <div className="mb-3">
             <label htmlFor="title" className="form-label">
-              Title
+              <h6>Title</h6>
             </label>
             <input
               type="text"
@@ -34,12 +34,13 @@ function AddNote(props) {
               value={note.title}
               onChange={onChange}
               required
+              style={{backgroundColor:'#FFBE98'}} 
             />
           </div>
           <div className="mb-3">
             <label htmlFor="description" className="form-label">
-              Description
             </label>
+              <h6>Description</h6>
             <input
               type="text"
               className="form-control"
@@ -48,11 +49,12 @@ function AddNote(props) {
               value={note.description}
               onChange={onChange}
               required
+              style={{backgroundColor:'#FFBE98'}}
             />
           </div>
           <div className="mb-3">
             <label htmlFor="tag" className="form-label">
-              Tag
+            <h6>Tag</h6> 
             </label>
             <input
               type="text"
@@ -62,6 +64,7 @@ function AddNote(props) {
               aria-describedby="emailHelp"
               value={note.tag}
               onChange={onChange}
+              style={{backgroundColor:'#FFBE98'}}
               required
             />
           </div>

@@ -35,12 +35,12 @@ function SignUp(props) {
 
   return (
     <>
-      <div className="container my-2">
+      <div className="container my-2" style={{color:'white'}}>
         <h3 className="my-3">Create a account to use the services of NoteBook Ninja</h3>
         <form onSubmit={handleClick}>
           <div className="mb-3">
             <label htmlFor="name" className="form-label">
-              Name
+             <h6>Name</h6>
             </label>
             <input
               type="text"
@@ -49,40 +49,43 @@ function SignUp(props) {
               name="name"
               aria-describedby="emailHelp"
               onChange={onChange}
-            />
+              style={{backgroundColor:'#FFBE98'}}
+              />
           </div>
           <div className="mb-3">
             <label htmlFor="email" className="form-label">
-              Email address
+              <h6> Email address</h6>
             </label>
             <input
               type="email"
+              style={{backgroundColor:'#FFBE98'}}
               className="form-control"
               id="email"
               name="email"
               aria-describedby="emailHelp"
               onChange={onChange}
-            />
-            <div id="emailHelp" className="form-text">
-              We'll never share your email with anyone else.
-            </div>
+              />
+            <div id="emailHelp" className="form-text" style={{color:'white'}}>
+               We'll never share your email with anyone else.
+                           </div>
           </div>
           <div className="mb-3">
             <label htmlFor="password" className="form-label">
-              Password
+              <h6>  Password</h6>
             </label>
             <input
               type="password"
               className="form-control"
               id="password"
+              style={{backgroundColor:'#FFBE98'}}
               name="password"
               aria-describedby="emailHelp"
               onChange={onChange}
-            />
+              />
           </div>
           <div className="mb-3">
             <label htmlFor="cpassword" className="form-label">
-              Repeat Password
+              <h6>Repeat Password</h6>
             </label>
             <input
               type="password"
@@ -90,6 +93,7 @@ function SignUp(props) {
               id="cpassword"
               name="cpassword"
               onChange={onChange}
+              style={{backgroundColor:'#FFBE98'}}
             />
           </div>
 

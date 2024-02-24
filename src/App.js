@@ -22,7 +22,8 @@ function App() {
   }
   return (
     <>
-    <NoteState>
+    <div className="box" style={{width:'100vw',height:'100vh',backgroundColor:'#603A28'}}>
+<NoteState>
       <Router>
         <Navbar />
         <Alert alert={alert}/>
@@ -34,6 +35,7 @@ function App() {
         </Routes>
       </Router>
     </NoteState>
+    </div>
     </>
   );
 }

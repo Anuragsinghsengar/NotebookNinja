@@ -32,7 +32,7 @@ function Login(props) {
   };
   return (
     <>
-      <div className="container my-3">
+      <div className="container my-3" style={{color:'white'}}>
       <h3 className="my-3">Login with your account to access your notes</h3>
         <form onSubmit={handleSubmit}>
           <div className="mb-3">
@@ -46,8 +46,9 @@ function Login(props) {
               name="email"
               aria-describedby="emailHelp"
               onChange={onChange}
+              style={{backgroundColor:'#FFBE98'}}
             />
-            <div id="emailHelp" className="form-text">
+            <div id="emailHelp" style={{color:'white'}} className="form-text">
               We'll never share your email with anyone else.
             </div>
           </div>
@@ -61,6 +62,7 @@ function Login(props) {
               id="password"
               name="password"
               onChange={onChange}
+              style={{backgroundColor:'#FFBE98'}}
             />
           </div>
           <button type="submit" className="btn btn-primary">
