@@ -159,7 +159,7 @@ function Notes(props) {
       <div className="container">
         <div className="row my-3">
           <h2 style={{color:'white'}}>Your Notes</h2>
-          <div className="container">
+          <div className="container" style={{color:'white'}}>
             {notes.length === 0 && "No Notes to display"}
           </div>
           {notes.map((note) => {
